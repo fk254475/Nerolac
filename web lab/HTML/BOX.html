@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Border Box</title>
+	<style>
+		body{
+			background: darkcyan no-repeat;
+			height: 100vh;
+			margin: 0;
+		}
+		body h2,p{
+			background: linear-gradient(90deg,rgb(93, 0, 255),white,red);
+			text-align: center;
+			padding: 10px;
+			width: 95%;
+			margin-left: 10px;
+			margin-right: 10px; 
+		    border-radius: 1px;
+		}
+		body ol{
+			background: linear-gradient(45deg,coral,rgb(20, 255, 67));
+			padding: 10px;
+			text-align: center;
+			width: 100%;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+		body ol li{
+			padding: 15px;
+		}
+		.main-container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container{
+			width: 300px;
+			margin: 20px;
+			padding: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 15px solid aqua;
+			background-clip: content-box;
+            box-shadow: inset 0 0 0 15px rgb(114, 128, 135);
+            background-clip:  padding-box;
+            background-image: linear-gradient(deeppink,pink,lightpink);
+		}
+		#p-tag {
+			padding: 15px;
+			line-height: 25px;
+            text-align: left;
+		}
+	</style>
+</head>
+<body>
+	<h2> The Box Model</h2>
+
+    <p> Box Model :- The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+
+	
+	<div class="main-container">
+		
+	
+	<div class="container">
+		<p>This is the space in Box-Model where the actual content we kept inside it and hence this is termed as Content.</p>
+		
+	</div>	
+	</div>
+	<p id="p-tag"><b>1. Margin is used to give space outside an element. Margin is defined after the border layer means outer area.<br>2. Border is visible outline of an element. Border is defined in above box-model: border: 15px solid aqua; <br>3. Padding is used to give space inside in box-model. Padding is defined in above box-model: linear-gradient(deeppink, pink, lightpink);
+		</b></p>
+</body>
+</html>
